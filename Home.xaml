@@ -1,0 +1,20 @@
+﻿<Window x:Name="HomeSection1" x:Class="BoatReservation.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatReservation"
+        mc:Ignorable="d"
+        Title="Home" Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Background="Azure" Height="569" VerticalAlignment="Top" Width="150">
+            <Label x:Name="NavigationLabel" Content="Navigation" Background="#FF4A8689" HorizontalContentAlignment="Center" FontSize="21.333"/>
+            <Button x:Name="HomeSection" Content="Home" Height="31" FontSize="16" Background="#FF60B0E8" Click="HomeSection_Click"/>
+            <Button Content="Bateaux&#xA;" Height="31" FontSize="16" Click="Button_Click"/>
+            <Button x:Name="PassengerSection" Content="Enregistrement&#xA;" Height="31" FontSize="16" Click="PassengerSection_Click"/>
+            <Button x:Name="ReservationSection" Content="Réservation&#xA;" Height="31" FontSize="16" Click="ReservationSection_Click"/>
+            <Button x:Name="LogoutSection" Content="Déconnection&#xA;" Height="31" FontSize="16" Click="LogoutSection_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

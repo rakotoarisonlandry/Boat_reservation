@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ocean travel</title>
+
+    <style>
+        .half_width {
+            width: 100%;
+            display: flex;
+            padding:30px;
+            justify-content: center;
+            margin:auto;
+            text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="half_width">
+        <center>
+            <H1>OCEAN TRAVEL TICKET</H1>
+
+            <br>
+
+            <center>
+                <div class="data">
+                    <h2>Réservation du {{date_res}}.</h2>
+                    <p>Au nom de : {{prenom}}</p>
+                    <p>Contact : {{tel}}</p>
+                    <hr>
+                    <p>Itinéraire : {{itineraire}}.</p>
+                    <p>Avec le bateaux : {{bateaux}}.</p>
+                    <p>Date de départ : {{depart}}</p>
+                    <hr>
+                    <p>Nombre de personne dans chaque classe :</p>
+                    <ul>
+                        <li>Class A : {{class_a}}</li>
+                        <li>Class B : {{class_b}}</li>
+                        <li>Class C : {{class_c}}</li>
+                    </ul>
+                    <hr>
+                    <p>Mode de payement : {{payement}}</p>
+                    <p>Somme payé : {{somme}}ar</p>
+                    <p>Reste à payé : {{reste}}ar</p>
+                    <h5>Merci pour votre confiance en notre companie et bon voyage.</h5>
+                </div>
+            </center>
+        </center>
+    </div>
+</body>
+
+</html>

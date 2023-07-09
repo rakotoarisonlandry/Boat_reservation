@@ -1,0 +1,45 @@
+﻿<Window x:Class="BoatReservation.WindowVoyage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatReservation"
+        mc:Ignorable="d"
+        Title="Editer" Height="600"  Width="471" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True">
+    <Grid>
+        <StackPanel x:Name="StackpanelEdit" Orientation="Vertical"  HorizontalAlignment="Left" Height="382" Margin="75,24,0,0" VerticalAlignment="Top" Width="312">
+            <Label x:Name="label_Itineraire" Content="Itineraire" HorizontalAlignment="Left" Margin="-2,0,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="textBox_itineraire" Height="32" Margin="0,5,0,0" TextWrapping="Wrap" Text="{Binding Itineraire, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" TextChanged="textBox_itineraire_TextChanged" HorizontalAlignment="Left" Width="312"/>
+
+
+            <Label x:Name="label_DateDepart" Content="Date du Depart" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,14,0,0"/>
+            <DatePicker x:Name="textBox_Date"  Text="{Binding DateDepart}"  VerticalAlignment="Top" Height="32" Margin="0,5,0,0"/>
+            <Label x:Name="label_Durée" Content="Durrée" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,15,0,0"/>
+            <TextBox x:Name="textBox_durée" Height="32" TextWrapping="Wrap" Text="{Binding Durer,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Margin="0,5,0,0"/>
+
+            <Label x:Name="label_frais" Content="Frais" HorizontalAlignment="Left"  VerticalAlignment="Top" RenderTransformOrigin="0.632,0.692" Margin="0,15,0,0"/>
+            <TextBox x:Name="textBox_frais" Height="32" TextWrapping="Wrap" Text="{Binding Frais, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" RenderTransformOrigin="0.484,0.25" Margin="0,5,0,0"/>
+
+            <Label x:Name="label_IdBateau" Content="Id Bateau" Margin="0,15,0,0" />
+            <TextBox x:Name="textBoxIdBateau" Height="32" Text="{Binding IdBateau, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" />
+            
+        </StackPanel>
+
+        <Button x:Name="button_Annuler" IsCancel="False" Content="Annuler" Margin="268,424,78,0"  Background="#FFB7BAC3" Foreground="White" VerticalAlignment="Top" Height="32" Click="button_Annuler_Click" Width="119">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="button_Enregister" IsDefault="True" Background="#FFF6A935" Foreground="White" Content="Confirmer" HorizontalAlignment="Left" Margin="75,426,0,0" VerticalAlignment="Top" Width="118" Height="32" Click="button_Enregister_Click">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

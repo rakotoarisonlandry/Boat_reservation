@@ -1,0 +1,48 @@
+﻿<Window x:Class="BoatReservation.AddBoat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatReservation"
+        mc:Ignorable="d"
+        Title="AddBoat" Height="402.048" Width="471" WindowStartupLocation="CenterScreen">
+    <Grid Margin="13,-21,22,21">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="cancel" Content="Annuler" HorizontalAlignment="Left" Margin="171,323,0,0" VerticalAlignment="Top" Width="119" Click="cancel_Click" Background="#FFB7BAC3" Foreground="White" Grid.Column="1" Height="32">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="confirm" Content="Ajouter" HorizontalAlignment="Left" Margin="5,323,0,0" VerticalAlignment="Top" Width="119" Click="confirm_Click" Background="#FFF6A935" Foreground="White" Grid.Column="1" Height="32">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="34,361,0,0" VerticalAlignment="Top" Width="212" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="Design" HorizontalAlignment="Left" Margin="0,38,0,0" VerticalAlignment="Top" Grid.Column="1" Width="80"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="43,91,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label2" Content="Classique" HorizontalAlignment="Left" Margin="1,102,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label3" Content="Premium" HorizontalAlignment="Left" Margin="1,165,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label4" Content="VIP" HorizontalAlignment="Left" Margin="3,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.515,-0.597" Grid.Column="1"/>
+        <TextBox x:Name="DesignField" HorizontalAlignment="Left" Height="32" Margin="2,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" ToolTip="Enter the designation fro the boat" Grid.Column="1"/>
+        <TextBox x:Name="ClassiqueField" HorizontalAlignment="Left" Height="32" Margin="0,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" ToolTip="Enter the number of classique class " Grid.Column="1"/>
+        <TextBox x:Name="PremiumField" HorizontalAlignment="Left" Height="32" Margin="1,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" ToolTip="Enter the number of premium class" Grid.Column="1"/>
+        <TextBox x:Name="VipField" HorizontalAlignment="Left" Height="32" Margin="0,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" ToolTip="Enter the number of vip class" Grid.Column="1"/>
+        <Label x:Name="label5" Content="*" HorizontalAlignment="Left" Margin="45,38,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+        <Label x:Name="label5_Copy" Content="" HorizontalAlignment="Left" Margin="45,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+        <Label x:Name="label5_Copy1" Content="*" HorizontalAlignment="Left" Margin="59,160,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+        <Label x:Name="label4_Copy3" Content="" HorizontalAlignment="Left" Margin="5,315,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label5_Copy5" Content="*" HorizontalAlignment="Left" Margin="36,232,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+        <Label x:Name="label5_Copy6" Content="*" HorizontalAlignment="Left" Margin="35,-57,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+        <Label x:Name="label5_Copy7" Content="*" HorizontalAlignment="Left" Margin="59,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505" Grid.Column="1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="BoatReservation.AddPassenger"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BoatReservation"
+        mc:Ignorable="d"
+        Title="AddPassenger" Height="594.236" Width="471" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,2">
+        <!--<Button x:Name="CancelB" Content="Annuler" HorizontalAlignment="Left" Margin="226,507,0,0" VerticalAlignment="Top" Width="75" Click="cancel_Click" Background="#FFF56666" Foreground="White"/>-->
+        <!--<Button x:Name="ConfirmB" Content="Confirmer" HorizontalAlignment="Left" Margin="101,507,0,0" VerticalAlignment="Top" Width="75" Click="confirm_Click" Background="#FF60B0E8" Foreground="White"/>-->
+        <Button x:Name="CancelB" Content="Annuler" HorizontalAlignment="Left" Margin="253,502,0,0" VerticalAlignment="Top" Width="119" Click="cancel_Click" Background="#FFB7BAC3" Foreground="White" Height="32">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="ConfirmB" Content="Ajouter" HorizontalAlignment="Left" Margin="96,504,0,0" VerticalAlignment="Top" Width="119" Click="confirm_Click" Background="#FFF6A935" Foreground="White" Height="32">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="4"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" Margin="88,545,0,0" VerticalAlignment="Top" Width="212"/>
+        <Label x:Name="label" Content="NOM" HorizontalAlignment="Left" Margin="97,17,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="PRENOM" HorizontalAlignment="Left" Margin="97,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="CIN" HorizontalAlignment="Left" Margin="97,138,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="EMAIL" HorizontalAlignment="Left" Margin="97,200,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label4" Content="TELEPHONE" HorizontalAlignment="Left" Margin="97,253,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FnameField" HorizontalAlignment="Left" Height="32" Margin="96,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" ToolTip="Votre Nom"/>
+        <TextBox x:Name="LnameField" HorizontalAlignment="Left" Height="32" Margin="97,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="287" ToolTip="Votre prénom (Optionnel)"/>
+        <TextBox x:Name="CinField" HorizontalAlignment="Left" Height="32" Margin="97,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" ToolTip="Votre CIN (optionnel)"/>
+        <TextBox x:Name="EmailField" HorizontalAlignment="Left" Height="32" Margin="97,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" ToolTip="Entrer l'email"/>
+        <TextBox x:Name="TelField" HorizontalAlignment="Left" Height="32" Margin="97,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" ToolTip="Entrer le numero de téléphoe"/>
+        <Label x:Name="label5" Content="*" HorizontalAlignment="Left" Margin="127,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <Label x:Name="label5_Copy" Content="*" HorizontalAlignment="Left" Margin="147,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <Label x:Name="label5_Copy1" Content="*" HorizontalAlignment="Left" Margin="162,249,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <TextBox x:Name="ReseField" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" Margin="97,345,0,0"/>
+        <Label x:Name="label4_Copy" Content="RSERVATION" HorizontalAlignment="Left" Margin="97,314,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5_Copy2" Content="*" HorizontalAlignment="Left" Margin="168,312,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <TextBox x:Name="voyageField" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" Margin="96,402,0,0"/>
+        <TextBox x:Name="classeField" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" Margin="96,458,0,0"/>
+        <Label x:Name="label4_Copy2" Content="VOYAGE" HorizontalAlignment="Left" Margin="95,375,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5_Copy3" Content="*" HorizontalAlignment="Left" Margin="147,373,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <Label x:Name="label4_Copy3" Content="" HorizontalAlignment="Left" Margin="101,373,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5_Copy4" Content="*" HorizontalAlignment="Left" Margin="141,425,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.347,-0.703" Foreground="#FFFF0505"/>
+        <Label x:Name="label4_Copy5" Content="CLASSE" HorizontalAlignment="Left" Margin="96,430,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
